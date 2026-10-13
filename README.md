@@ -1,5 +1,7 @@
 # wallaby-ai-provider
 
+[![npm version](https://img.shields.io/npm/v/wallaby-ai-provider)](https://www.npmjs.com/package/wallaby-ai-provider) [![npm downloads](https://img.shields.io/npm/dm/wallaby-ai-provider)](https://www.npmjs.com/package/wallaby-ai-provider) [![license](https://img.shields.io/npm/l/wallaby-ai-provider)](https://github.com/Dawncoral/wallaby-ai-provider/blob/main/LICENSE)
+
 [Wallaby](https://wallabytoken.com) provider for the [Vercel AI SDK](https://ai-sdk.dev) — Kimi K3 over an OpenAI-compatible endpoint, pay-per-token, no subscription.
 
 ## Install
@@ -41,7 +43,7 @@ const model = myWallaby('kimi-k3');
 
 ## Models
 
-| Model | Context | Max output | Pricing (per 1M tokens, promotional) |
+| Model | Context | Max output | Pricing (per 1M tokens, 10% off the official list) |
 |---|---|---|---|
 | `kimi-k3` | 1,048,576 | 131,072 | $2.70 in / $13.50 out / $0.27 cache hit |
 

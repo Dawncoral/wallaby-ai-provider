@@ -1,8 +1,18 @@
 {
   "name": "wallaby-ai-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wallaby (Kimi K3) provider for the Vercel AI SDK — OpenAI-compatible, pay-per-token",
-  "keywords": ["vercel-ai-sdk", "ai-sdk-provider", "wallaby", "kimi-k3", "openai-compatible"],
+  "keywords": [
+    "vercel-ai-sdk",
+    "ai-sdk",
+    "ai-sdk-provider",
+    "wallaby",
+    "kimi",
+    "kimi-k3",
+    "moonshot",
+    "llm",
+    "openai-compatible"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./index.js",
@@ -13,14 +23,19 @@
       "default": "./index.js"
     }
   },
-  "files": ["index.js", "index.d.ts", "README.md", "LICENSE"],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "@ai-sdk/openai-compatible": "^3.0.0"
   },
   "homepage": "https://wallabytoken.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dawncoral/wallaby-ai-provider"
+    "url": "git+https://github.com/Dawncoral/wallaby-ai-provider.git"
   },
   "engines": {
     "node": ">=18"
