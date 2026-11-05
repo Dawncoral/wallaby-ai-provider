@@ -1,0 +1,31 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+
+      - run: npm install --package-lock=false
+
+      - run: |
+          node --input-type=module -e "import { createWallaby, wallaby } from './index.js'; const custom = createWallaby({ apiKey: 'test' }); if (typeof custom !== 'function' || typeof wallaby !== 'function') throw new Error('Wallaby exports failed'); console.log('Wallaby exports OK');"
+
+      - run: npm publish --access public
