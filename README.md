@@ -43,9 +43,14 @@ const model = myWallaby('kimi-k3');
 
 ## Models
 
-| Model | Context | Max output | Pricing (per 1M tokens, 10% off the official list) |
+Pick a model.
+
+K3.1 Pro and K3 share the same context and output limits, but their prices differ, so check the table before choosing.
+
+| Model | Context | Max output | Pricing (per 1M tokens) |
 |---|---|---|---|
-| `kimi-k3` | 1,048,576 | 131,072 | $2.70 in / $13.50 out / $0.27 cache hit |
+| `kimi-k3.1-pro` | 1,048,576 | 131,072 | $1.80 in / $9.00 out / $0.18 cache hit |
+| `kimi-k3` | 1,048,576 | 131,072 | $2.55 in / $12.75 out / $0.255 cache hit |
 
 ## License
 

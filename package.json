@@ -1,6 +1,6 @@
 {
   "name": "wallaby-ai-provider",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Wallaby (Kimi K3) provider for the Vercel AI SDK — OpenAI-compatible, pay-per-token",
   "keywords": [
     "vercel-ai-sdk",
